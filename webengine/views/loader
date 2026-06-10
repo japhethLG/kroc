@@ -1,1 +1,11 @@
-{{current_view}}
+{{ include /components/styles.html }}
+
+{{ include /components/icons.html }}
+
+<div class="mx-auto flex min-h-screen flex-col max-w-7xl">
+  {{ include /components/header.html }}
+  <main class="flex-1">
+    {{ current_view }}
+  </main>
+  {{ include /components/footer.html }}
+</div>
